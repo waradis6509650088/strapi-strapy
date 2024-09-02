@@ -5,6 +5,20 @@ This is summary for CS360 Assignment 1 "Manual Cloud-based Web Deployment"
 Strapi เป็น CMS(Content management system) ที่ไว้ใช้สร้าง Backend API
 โดยมี Admin panel ที่ developer สามารถใช้ทดสอบและแก้ไข API ได้อย่างง่าย
 
+โดยตัว strapi จะมี 3 ส่วนหลักๆคือ:
+* Content type
+* Entry
+* Media Library
+
+โดยจากความเข้าใจของผม Content type จะเป็นเหมือนกับ Table ใน database, Entry จะทำหน้าที่เป็น row ข้อมูล, และ Media Library เป็นจุดที่ใช้เก็บข้อมูล media ต่างๆที่ใช้ใน API
+
+ตัวของ Content Type ก็จะแบ่งได้อีก 3 แบบคือ
+* #### Collection types
+    > กลุ่มของของข้อมูลที่ระบุข้อมูลหลายๆแบบไว้ โดยมีลักษณะคล้ายกับ Table ใน database โดยแต่ละชุดข้อมูลจะ๔ูกเก็บไว้ในรูปของ Entry
+* #### Single Types 
+    > เป็น collection types ที่มีเพียง Entry เดียวและไม่สามารถเพิ่มได้
+* #### Components
+    > กลุ่มของข้อมูลที่สามารถนำมาใช้ซ้ำได้ ทำหน้าที่เหมือนเป็น relation ใน database
 ### Ignore file
 ---
 ignore file เป็นไฟล์ที่เอาไว้เก็บชื่อไฟล์ที่เราไม่ต้องการที่จะ commit ไปพร้อมกับตัวโปรเจ็ก ส่วนมากจะเอาไว้ ignore ไฟล์หรือโฟล์เดอร์ modules เช่น node_modules หรือไฟล์ที่ใช้เก็บ API KEYS เช่นไฟล์ .env
